@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2016 Roku Corp.  All Rights Reserved. -->
+<component name="SimpleVideoScene" extends="Scene">
+  <script type="text/brightscript" uri="pkg:/components/SimpleVideoScene.brs"/>
+  <children>
+
+    <Label 
+      id="Title" 
+      translation="[750, 250]" 
+      width="850"
+      height = "300">
+      <Font 
+        id = "Gilroy-ExtraBold"
+        role = "font"
+        uri = "pkg:/fonts/Gilroy-ExtraBold.otf"
+        size = "40"/>
+      </Label>
+    
+    <ButtonGroup id="ButtonGroup" translation="[800,325]"/>
+    <Poster 
+      id="Image" 
+      loadHeight = "300"
+      loadWidth = "650"
+      loadDisplayMode="scaleToFit"
+      uri = "pkg:/images/plating-curry.png"
+      translation="[100,300]"/>
+
+    <Label
+      id="Details"
+      height="300"
+      width="1300"
+      text="PUT DETAILS TEXT HERE"
+      wrap="true"
+      translation="[300,600]">
+      <Font  
+        id = "Gilroy-ExtraBold"
+        role = "font"
+        uri = "pkg:/fonts/Gilroy-ExtraBold.otf"
+        size = "30"/>
+      </Label>
+
+    <Overhang
+      showClock="true"
+      title="Dollhouse Food Network" />
+
+    <Video
+      id="Video"
+      width="1920"
+      height="1080"
+      translation="[0,0]"
+      visible="false"/>
+
+    <Dialog
+      id="WarningDialog"
+      title="Warning"
+      message="PUT A WARNING MESSAGE HERE"
+      visible="false" />
+
+    <Exiter id="Exiter"/>
+  </children>
+
+  
+</component>
